@@ -1,0 +1,56 @@
+@import 'styles/common/_variables.scss';
+
+.selector {
+  width: 250px;
+  height: 40px;
+  border: 1px solid $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 6px 28px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: $white;
+}
+
+.selector:hover {
+  cursor: pointer;
+}
+
+.selector-options {
+  background-color: $white;
+  position: absolute;
+  width: 250px;
+  border: 1px solid $primary;
+  border-radius: 20px;
+  left: 0px;
+  top: calc(100% + 5px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 2
+}
+
+.selector-option {
+  margin-left: 8px;
+  text-transform: capitalize;
+}
+
+.selector-option-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 12px;
+}
+
+.selector-option-wrapper:hover {
+  background-color: $alabaster;
+}
+
+.selector-selected {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
