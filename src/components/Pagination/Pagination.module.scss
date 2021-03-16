@@ -1,0 +1,87 @@
+@import 'styles/common/_variables.scss';
+
+.pagination {
+  display: flex;
+  align-items: center;
+	border-radius: 35px;
+  background-color: $sand;
+  width: fit-content;
+  color: $darkgrey;
+  margin: 0 auto;
+
+  &-page {
+    list-style-type: none;
+
+    &:hover {
+      cursor: pointer;
+      color: $black;
+    }
+
+    &--active {
+      background-color: $primary;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &-link:focus {
+      outline: none;
+    }
+
+    &-link {
+      font-size: 12px;
+      padding: 15px;
+      line-height: 45px;
+    }
+  }
+
+  &-previous {
+    list-style-type: none;
+    margin: 0 20px;
+    font-size: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-link {
+      padding: 15px 0px;
+    }
+
+    &-link:focus {
+      outline: none;
+    }
+  }
+
+  &-next {
+    list-style-type: none;
+    margin: 0 20px;
+    font-size: 12px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-link {
+      padding: 15px 0px;
+    }
+
+    &-link:focus {
+      outline: none;
+    }
+  }
+
+  &-break {
+    list-style-type: none;
+  }
+
+  &-disabled {
+    color: $silver;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
