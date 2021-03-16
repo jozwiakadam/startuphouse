@@ -1,0 +1,57 @@
+@import 'styles/common/_variables.scss';
+
+.article {
+  padding: 50px 40px;
+  border: 1px solid $mercury;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+
+  &-title {
+    font-size: 20px;
+  }
+
+  &-section {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    color: $primary;
+  }
+
+  &-date {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    color: $bayoux;
+    font-size: 14px;
+  }
+  
+  &-link {
+    text-decoration: none;
+    color: $white;
+    font-size: 16px;
+    width: 100%;
+    background-color: $primary;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+  &-read-later, &-delete {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 26px;
+    transition: .3s;
+
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}

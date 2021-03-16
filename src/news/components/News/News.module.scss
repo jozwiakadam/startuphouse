@@ -1,0 +1,19 @@
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  gap: 40px;
+  justify-content: center;
+  max-width: 1800px;
+  margin: 40px auto;
+
+  &-wrapper {
+    margin: 80px auto;
+    padding: 0px 100px;
+  }
+
+  &-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+}
