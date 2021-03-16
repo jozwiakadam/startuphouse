@@ -1,0 +1,15 @@
+@import 'styles/common/_variables.scss';
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+
+  &-link {
+    text-decoration: none;
+    color: $black;
+
+    &--active {
+      color: $primary;
+    }
+  }
+}
